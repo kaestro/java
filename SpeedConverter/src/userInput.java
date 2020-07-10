@@ -15,5 +15,7 @@ public class userInput {
         System.out.println("Your age is: " + age);
 
         scanner.close();
+
+        System.out.println(new String("*").repeat(8));
     }
 }
