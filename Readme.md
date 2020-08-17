@@ -31,3 +31,15 @@ boolean forward = true;
 In java, you don't have "current Iterator" due to reject infinite loop from happening.
 
 If you don't have forward iterator, you don't know if you can move forward or backward.
+
+## InnerClasses
+
+### How to initialize a inner class
+
+To initiate a Inner class, there must exist a **instance**.
+
+ex)
+GearBox mcLaren = new GearBox(6);
+GearBox.Gear first = mcLaren.new Gear(1, 12.3); // Okay
+GearBox.Gear second = new Gearbox.Gear(2, 15.4); // Wrong
+GearBox.Gear third = new mcLaren.Gear(3, 17.8); // Wrong
